@@ -1,66 +1,64 @@
-
 ![Logo](https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg)
 
-# Spring POS
+# Spring POS System
 
-This is a Spring-based backend for a Point of Sale (POS) system, offering RESTful APIs for managing customers, items, orders, and transactions. The project leverages Spring Framework, JPA, Hibernate, Tomcat, and MySQL for efficient database connectivity and robust backend functionality.
-## Features
+This project is a backend application for a Point of Sale (POS) system, developed using the Spring framework. It provides RESTful APIs for managing core functionalities like customers, items, orders, and transactional data. Leveraging Spring, JPA, Hibernate, Tomcat, and MySQL, the system ensures smooth backend operations and robust database management.
 
-- Customer Management (Create, Read, Update, Delete)
-- Item Management (Create, Read, Update, Delete)
-- Order and Transaction Processing
-- Exception Handling and Validation using Hibernate Validator
-- JSON Response formatting
+## Key Features
 
+- CRUD Operations for Customer Management
+- CRUD Operations for Item Management
+- Order Processing and Transaction Management
+- Integrated Validation via Hibernate Validator
+- JSON Responses for clear data exchange
 
-## Technologies
+## Technology Stack
 
-- **Java Vesion:** JDK 21
-- **Backend Framework:** Spring
-- **Database:** MySQL
-- **ORM:** JPA, Hibernate
-- **Server:** Apache Tomcat 11.0.0-M26
-- **Validation:** Hibernate Validator
-- **Logger:** Logback
+- **Java Version:** JDK 21
+- **Backend Framework:** Spring Framework
+- **Database Management:** MySQL
+- **ORM:** JPA & Hibernate
+- **Application Server:** Apache Tomcat 11.0.0-M26
+- **Data Validation:** Hibernate Validator
+- **Logging:** Logback
 
+## System Architecture
 
-## Architecture Overview
-- **Entities:** Representations for Customer, Item, Order, and OrderDetail
-- **Data Transfer Objects (DTOs):** Includes CustomerDTO, ItemDTO, and OrderDTO
-- **Repositories:** Interfaces for database operations, such as CustomerRepository, ItemRepository, OrderRepository, and OrderDetailRepository
-- **Services:** Business logic for managing customers, items, and orders in CustomerService, ItemService, and OrderService
-- **Controllers:** API endpoints for handling customer, item, and order-related requests via CustomerController, ItemController, and OrderController
-- **Utilities:** Helper classes for tasks like object mapping (Mapping) and application utilities (AppUtil)
-- **Exceptions:** Custom error handling mechanisms for specific scenarios
-- **Configuration:** Application setup classes like WebAppConfig and WebAppRootConfig
+- **Entity Models:** Defines entities like Customer, Item, Order, and OrderDetail
+- **DTOs (Data Transfer Objects):** Includes representations such as CustomerDTO, ItemDTO, and OrderDTO
+- **Repositories:** Interfaces for database access (e.g., CustomerRepository, ItemRepository)
+- **Service Layer:** Handles core business logic in CustomerService, ItemService, and OrderService
+- **Controllers:** Define API routes and handle customer, item, and order requests
+- **Utilities:** Support tasks like object mapping (Mapping class) and general utilities (AppUtil)
+- **Exception Handling:** Custom exceptions for precise error management
+- **Configuration Files:** For setup, including WebAppConfig and WebAppRootConfig
 
-## Validation
-Data validation is enforced through Hibernate Validator annotations within the DTO classes, ensuring both data integrity and accuracy.
+## Data Validation
 
-## Logging
-Logging is set up with Logback, capturing logs both in the console and in a dedicated file.
+Input data is rigorously validated using annotations from Hibernate Validator within DTO classes, ensuring correctness and integrity.
 
-## Custom Exceptions
-Custom exceptions are designed to address specific error situations, delivering clear and informative error messages to the client.
+## Logging Mechanism
 
-## Setup and Configuration
+The application employs Logback for effective logging, tracking activities in both the console and log files.
 
-**Prerequisites**
+## Exception Management
+
+Custom exceptions are set up to address specific issues, ensuring informative feedback is provided to users in case of errors.
+
+## Installation & Setup
+
+**Prerequisites:**
 
 - **JDK 21**
-- **Tomcat 11**
-- **MySQL server**
+- **Apache Tomcat 11**
+- **MySQL**
 - **Maven**
 
-
-## Clone the repository:
-
-
+### How to Clone the Project:
 
 ```bash
   https://github.com/weerapperuma/SimplePos_Spring.git
 ```
-
 ## API Documentation
 
 To view this project API Documentation

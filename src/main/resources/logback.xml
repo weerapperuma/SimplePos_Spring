@@ -5,7 +5,7 @@
         </encoder>
     </appender>
     <appender name="File" class="ch.qos.logback.core.FileAppender">
-        <file>C:\DevSahiru\ijse\AAD\Simple_Pos_Spring_Framework\pos_back_end/app.log</file>
+        <file>/home/sasa-x/Documents/INTELLIJ/Spring-POS/app.log</file>
         <append>true</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
